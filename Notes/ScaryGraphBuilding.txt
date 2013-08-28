@@ -1,0 +1,15 @@
+﻿       List<Tuple<State, string>> scaryEdges = BuildScaryGraph();
+            List<Tuple<State, State>> edges = BuildGraph();
+
+            this.debug("Dumping scaryEdges...");
+            foreach (var t in scaryEdges)
+            {
+                this.debug(t.Item1.ToString() + " -> " + t.Item2);
+            }
+
+
+            this.debug("Dumping edges...");
+            foreach (var t in edges)
+            {
+                this.debug(t.Item1.ToString() + " -> " + t.Item2);
+            }
